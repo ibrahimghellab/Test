@@ -1,8 +1,8 @@
 package Package;
-
+//Non
 import java.util.*;
 
-public class Catégorie {
+public class Catï¿½gorie {
 
 	Collection<Sportif> leSportif;
 	Collection<Equipe> lEquipe;
@@ -16,17 +16,17 @@ public class Catégorie {
 	 * @param poidsMax
 	 * @param nomCategorie
 	 */
-	public Catégorie(int poidsMin, int poidsMax, string nomCategorie) {
-		// TODO - implement Catégorie.Catégorie
+	public Catï¿½gorie(int poidsMin, int poidsMax, string nomCategorie) {
+		// TODO - implement Catï¿½gorie.Catï¿½gorie
 		throw new UnsupportedOperationException();
 	}
 
 	/**
 	 * 
-	 * @param nomCatégorie
+	 * @param nomCatï¿½gorie
 	 */
-	public void afficherCategorie(string nomCatégorie) {
-		// TODO - implement Catégorie.afficherCategorie
+	public void afficherCategorie(string nomCatï¿½gorie) {
+		// TODO - implement Catï¿½gorie.afficherCategorie
 		throw new UnsupportedOperationException();
 	}
 
