@@ -2,11 +2,11 @@ package Package;
 //Non
 import java.util.*;
 
-public class Cat�gorie {
+public class Categorie {
 
 	ArrayList<Sportif> leSportif;
 	ArrayList<Equipe> lEquipe;
-	private string nomCategorie;
+	private String nomCategorie;
 	private float poidsMin;
 	private int poidsMax;
 
@@ -16,16 +16,21 @@ public class Cat�gorie {
 	 * @param poidsMax
 	 * @param nomCategorie
 	 */
-	public Cat�gorie(int poidsMin, int poidsMax, string nomCategorie) {
+	public Categorie(int poidsMin, int poidsMax, String nomCategorie) {
 		// TODO - implement Cat�gorie.Cat�gorie
 		throw new UnsupportedOperationException();
 	}
 
+	public void ajouterEquipe(Equipe e){
+		lEquipe.add(e);
+	}
+
+
 	/**
 	 * 
-	 * @param nomCat�gorie
+	 * @param nomCategorie
 	 */
-	public void afficherCategorie(string nomCat�gorie) {
+	public void afficherCategorie(String nomCategorie) {
 		// TODO - implement Cat�gorie.afficherCategorie
 		throw new UnsupportedOperationException();
 	}

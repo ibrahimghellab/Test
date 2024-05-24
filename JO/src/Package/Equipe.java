@@ -7,7 +7,7 @@ public class Equipe {
 	Pays lePays;
 	Resultat sesResultats;
 	ArrayList<Sportif> sesSportifs;
-	Cat�gorie saCategorie;
+	Categorie saCategorie;
 	ArrayList<Resultat> lesResultats;
 	private String nomEquipe;
 	private String genreEquipe;
