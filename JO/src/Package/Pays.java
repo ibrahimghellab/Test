@@ -20,4 +20,9 @@ public class Pays {
 		throw new UnsupportedOperationException();
 	}
 
+	public void supprimerSportif() {
+		// TODO - implement Sportif.supprimerSportif
+		throw new UnsupportedOperationException();
+	}
+
 }

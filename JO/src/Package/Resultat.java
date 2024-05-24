@@ -58,4 +58,9 @@ public class Resultat {
 		throw new UnsupportedOperationException();
 	}
 
+	public void supprimerSportif() {
+		// TODO - implement Sportif.supprimerSportif
+		throw new UnsupportedOperationException();
+	}
+
 }
