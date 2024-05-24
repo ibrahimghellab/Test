@@ -83,4 +83,12 @@ public class Session {
 		throw new UnsupportedOperationException();
 	}
 
+	public void ajouterVille(){
+
+	}
+
+	public void supprimerVille(){
+		
+	}
+
 }

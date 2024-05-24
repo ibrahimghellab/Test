@@ -70,4 +70,13 @@ public class Equipe {
 		throw new UnsupportedOperationException();
 	}
 
+	public void ajouterPays(){
+
+	}
+
+	public void supprimerPays(){
+		
+	}
+
+
 }

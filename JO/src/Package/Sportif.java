@@ -23,10 +23,7 @@ public class Sportif {
 		throw new UnsupportedOperationException();
 	}
 
-	public void modifierSportif() {
-		// TODO - implement Sportif.modifierSportif
-		throw new UnsupportedOperationException();
-	}
+	
 
 	
 

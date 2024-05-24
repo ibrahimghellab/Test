@@ -31,4 +31,12 @@ public class SiteEpreuve {
 		throw new UnsupportedOperationException();
 	}
 
+	public void ajouterVille(){
+
+	}
+
+	public void supprimerVille(){
+		
+	}
+
 }

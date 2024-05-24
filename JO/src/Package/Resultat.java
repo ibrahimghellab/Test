@@ -63,4 +63,17 @@ public class Resultat {
 		throw new UnsupportedOperationException();
 	}
 
+	public void modifierSportif() {
+		// TODO - implement Sportif.modifierSportif
+		throw new UnsupportedOperationException();
+	}
+
+	public void ajouterPays(){
+
+	}
+
+	public void supprimerPays(){
+		
+	}
+
 }
