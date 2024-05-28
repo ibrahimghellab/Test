@@ -2,7 +2,7 @@ package Package;
 
 public class Session {
 
-	private Resultat leResultat;
+	private ArrayList<Resultat> lesResultats;
 	private Ville laVille;
 	private Epreuve sonEpreuve;
 	private String dateSession;
@@ -13,6 +13,63 @@ public class Session {
 	private String typeGenresession;
 	private float dureeSession;
 	private int numSession;
+	private ArrayList<Sport> sesSports;
+
+	void modifierVille(Ville v){
+		laVille=v;
+	}
+	void modifierEpreuve(Epreuve e){
+		sonEpreuve=e;
+	}
+	void modifierdateSession(String dateSession){
+		this.dateSession=dateSession;
+	}
+	void modifierhoraireSession(String horaireSession){
+		this.horaireSession = horaireSession;
+	}
+
+	void modifierjourSession(String jourSession){
+		this.jourSession = jourSession;
+	}
+
+	void modifierindividuelleSession (boolean individuelleSession){
+		this.individuelleSession =individuelleSession;
+	}
+
+
+	void modifierdescriptionSesson(String descriptionSession){
+		this.descriptionSession = descriptionSession;
+	} 
+	void modifiertypeGenresession[String typeGenresession){
+		this.typeGenreSession = typeGenreSession;
+	}]
+
+
+	void modifierdureeSession(float dureeSession){
+		this.dureeSession = dureeSession;
+	}
+	
+	void modifiernumSession(int numSession){
+		this.numSession = numSession;
+	}
+
+
+
+	void ajouterResultat(Resultat r){
+		 if(!(lesResultats.contains(r))){
+            lesResultats.add(r);
+        }else{
+            System.out.println("Le résultat est déjà présent pour cette session");
+        }
+	}
+
+	void supprimerResultat(Resultat r){
+		 if((lesResultats.contains(r))){
+            lesResultats.remove(r);
+        }else{
+            System.out.println("Le résultat n'existe pas pour cette session");
+        }
+	}
 
 	/**
 	 * 
@@ -25,21 +82,22 @@ public class Session {
 	 */
 	public Session(String dateSession, String horaireSession, String jourSession, boolean individuelleSession, String typeGenreSession, float dureeSession) {
 		// TODO - implement Session.Session
+			this.dateSession = dateSession;
+			this.horaireSession = horaireSession;
+			this.jourSession = jourSession;
+			this individuelleSession = individuelleSession;
+			this.typeGenreSession = typeGenreSession;
+			this.dureeSession = dureeSession;
 		throw new UnsupportedOperationException();
 	}
 
-	public void afficherSession() {
-		// TODO - implement Session.afficherSession
-		throw new UnsupportedOperationException();
-	}
+	
 
-	public void supprimerSession() {
-		// TODO - implement Session.supprimerSession
-		throw new UnsupportedOperationException();
-	}
+
 
 	public void afficherPlanning() {
-		// TODO - implement Session.afficherPlanning
+		// TODO - implement Session.afficherPlannin
+		//for du to string 
 		throw new UnsupportedOperationException();
 	}
 
@@ -52,10 +110,8 @@ public class Session {
 	 * @param typeGenreSession
 	 * @param dureeSession
 	 */
-	public void modifierSession(String dateSession, String horaireSession, boolean jourSession, boolean individuelleSession, String typeGenreSession, float dureeSession) {
-		// TODO - implement Session.modifierSession
-		throw new UnsupportedOperationException();
-	}
+
+	
 
 	/**
 	 * 
@@ -65,10 +121,7 @@ public class Session {
 	 * @param nomCategorie
 	 * @param typeSport
 	 */
-	public void creerPlanning(String dateSession, String horaireSession, String jourSession, String nomCategorie, String typeSport) {
-		// TODO - implement Session.creerPlanning
-		throw new UnsupportedOperationException();
-	}
+
 
 	/**
 	 * 
@@ -78,17 +131,24 @@ public class Session {
 	 * @param nomCategorie
 	 * @param typeSport
 	 */
-	public void modifierPlanning(String dateSession, String horaireSession, String jourSession, String nomCategorie, String typeSport) {
-		// TODO - implement Session.modifierPlanning
-		throw new UnsupportedOperationException();
+
+	
+	void ajouterSport(Sport s){
+		 if(!(sesSports.contains(s))){
+            sesSports.add(s);
+        }else{
+            System.out.println("Le sport est déjà présent pour cette session");
+        }
 	}
 
-	public void modifierVille(){
-
+	void supprimerResultat(Sport s){
+		 if((sesSports.contains(s))){
+            sesSports.remove(s);
+        }else{
+            System.out.println("Le sport n'existe pas pour cette session");
+        }
 	}
 
-	public void modifier(){
-		
-	}
+
 
 }

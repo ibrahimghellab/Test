@@ -5,6 +5,7 @@ import java.util.*;
 public class Sport {
 
 	ArrayList<Sportif> leSportif;
+	ArrayList<Session> sesSessions;
 	private String typeSport;
 	private String nomSport;
 
