@@ -43,7 +43,9 @@ public class Equipe {
 
     public void afficherEquipe() {
         // TODO - implement Equipe.afficherEquipe
-        throw new UnsupportedOperationException();
+        
+		System.out.println("Nom de l'équipe : " + nomEquipe);
+		throw new UnsupportedOperationException();
     }
 
     /*public void supprimerEquipe() {
@@ -57,7 +59,15 @@ public class Equipe {
      */
     public void ajouterSportif(Sportif sportif) {
         // TODO - implement Equipe.ajouterSportif
-        throw new UnsupportedOperationException();
+     
+
+		 if(!(sesSportifs.contains(sportif))){
+            sesSportifs.add(sportif);
+        }else{
+            // a immplémenter dans le controller
+            System.out.println("Le sportif que vous voulez ajouter est déjà présent");
+        }
+		throw new UnsupportedOperationException();
     }
 
     /**
@@ -66,7 +76,16 @@ public class Equipe {
      */
     public void supprimerSportif(Sportif sportif) {
         // TODO - implement Equipe.supprimerSportif
-        throw new UnsupportedOperationException();
+       
+
+		if(sesSportifs.contains(sportif)){
+			sesSportifs.remove(sportif);
+		}else{
+
+			System.out.println("Le sportif que vous voulez supprimer n'est pas présent");
+
+		}
+		throw new UnsupportedOperationException();
     }
 
     /**
@@ -84,7 +103,9 @@ public class Equipe {
      */
     public void modifierNomEquipe(String nouveauNomEquipe) {
         // TODO - implement Equipe.modifierNomEquipe
+		nomEquipe = nouveauNomEquipe;
         throw new UnsupportedOperationException();
+		
     }
 
 }
