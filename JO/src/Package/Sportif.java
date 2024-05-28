@@ -8,7 +8,7 @@ public class Sportif {
 	ArrayList<Resultat> sonResulat;
 	Sport sonsport;
 	Pays sonPays;
-	Cat�gorie saCategorie;
+	Categorie saCategorie;
 	private char nomSportif;
 	private char prenomSportif;
 	private int age;
