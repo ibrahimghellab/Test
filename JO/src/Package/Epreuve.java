@@ -10,19 +10,16 @@ public class Epreuve {
 
     /**
      * 
-     * @param numSession
+     * 
      * @param nomEpreuve
      */
-    public Epreuve(int numSession, String nomEpreuve) {
+    public Epreuve( String nomEpreuve) {
+        this.nomEpreuve=nomEpreuve;
         // TODO - implement Epreuve.Epreuve
         throw new UnsupportedOperationException();
     }
 
-    /*public void supprimerEpreuve() {
-        // TODO - implement Epreuve.supprimerEpreuve
-        throw new UnsupportedOperationException();
-    }*/
-
+   
     public void ajouterSession(Session s){
         if(!(sesSessions.contains(s))){
             sesSessions.add(s);
@@ -48,6 +45,11 @@ public class Epreuve {
      */
     public void ajouterSiteEpreuve(SiteEpreuve siteEpreuve) {
         // TODO - implement Epreuve.ajouterSiteEpreuve
+        if(!(lesSitesEpreuves.contains(siteEpreuve))){
+            lesSitesEpreuves.add (siteEpreuve);
+        }else{
+            System.out.println("Le site épreuve est déjà présent pour cette épreuve");
+        }
         throw new UnsupportedOperationException();
     }
     
@@ -57,6 +59,11 @@ public class Epreuve {
      */
     public void supprimerSiteEpreuve(SiteEpreuve siteEpreuve) {
         // TODO - implement Epreuve.ajouterSiteEpreuve
+        if(lesSitesEpreuves.contains(siteEpreuve)){
+            lesSitesEpreuves.remove(siteEpreuve);
+        }else{
+            System.out.println("Le site épreuve n'existe pas");
+        }
         throw new UnsupportedOperationException();
     }
 
@@ -64,8 +71,9 @@ public class Epreuve {
      * 
      * @param nouveauNomEpreuve
      */
-    public void modifierNomEpreuve(int nouveauNomEpreuve) {
+    public void modifierNomEpreuve(String nouveauNomEpreuve) {
         // TODO - implement Epreuve.modifierNomEpreuve
+        nomEpreuve=nouveauNomEpreuve;
         throw new UnsupportedOperationException();
     }
 
