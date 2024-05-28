@@ -2,9 +2,9 @@ package Package;
 
 public class Session {
 
-	Resultat leResultat;
-	Ville laVille;
-	Epreuve sonEpreuve;
+	private Resultat leResultat;
+	private Ville laVille;
+	private Epreuve sonEpreuve;
 	private String dateSession;
 	private String horaireSession;
 	private String jourSession;
@@ -83,11 +83,11 @@ public class Session {
 		throw new UnsupportedOperationException();
 	}
 
-	public void ajouterVille(){
+	public void modifierVille(){
 
 	}
 
-	public void supprimerVille(){
+	public void modifier(){
 		
 	}
 

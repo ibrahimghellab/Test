@@ -8,7 +8,7 @@ public class Pays {
 	ArrayList<Resultat> sesResultats;
 	ArrayList<Equipe> lEquipe;
 	ArrayList<Ville> sesVilles;
-	private char Nom;
+	private String Nom;
 
 	public Pays() {
 		// TODO - implement Pays.Pays
@@ -43,5 +43,24 @@ public class Pays {
 		
 	}
 
+	public void ajouterResultat(){
+
+	}
+
+	public void supprimerResultat(){
+		
+	}
+
+	public void ajouterEquipe(){
+
+	}
+
+	public void supprimerEquipe(){
+		
+	}
+	
+	void modifierNomPays(){
+		
+	}
 	
 }

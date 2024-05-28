@@ -4,8 +4,8 @@ import java.util.*;
 
 public class SiteEpreuve {
 
-	Ville saVille;
-	Collection<Epreuve> lEpreuve;
+	private Ville saVille;
+	ArrayList<Epreuve> lEpreuve;
 	private String nomSiteEpreuve;
 
 	/**
@@ -31,11 +31,15 @@ public class SiteEpreuve {
 		throw new UnsupportedOperationException();
 	}
 
-	public void ajouterVille(){
+		public void ajouterEpreuve(){
 
 	}
 
-	public void supprimerVille(){
+	public void supprimerEpreuve(){
+		
+	}
+
+	public void modifierVille(){
 		
 	}
 

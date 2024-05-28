@@ -23,8 +23,13 @@ public class Sportif {
 		throw new UnsupportedOperationException();
 	}
 
-	
+	public void ajouterResultat(){
 
+	}
+
+	public void supprimerResultat(){
+		
+	}
 	
 
 }

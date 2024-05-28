@@ -5,7 +5,6 @@ import java.util.*;
 public class Equipe {
 
     Pays lePays;
-    Resultat sesResultats;
     ArrayList<Sportif> sesSportifs;
     Categorie saCategorie;
     ArrayList<Resultat> lesResultats;

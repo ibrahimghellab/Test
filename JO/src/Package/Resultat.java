@@ -31,10 +31,7 @@ public class Resultat {
 		throw new UnsupportedOperationException();
 	}
 
-	public void supprimerResultat() {
-		// TODO - implement Resultat.supprimerResultat
-		throw new UnsupportedOperationException();
-	}
+
 
 	/**
 	 * 
@@ -73,6 +70,18 @@ public class Resultat {
 	}
 
 	public void supprimerPays(){
+		
+	}
+
+	public void ajouterEquipe(){
+
+	}
+
+	public void supprimerEquipe(){
+		
+	}
+	
+	public void modifierPays(){
 		
 	}
 

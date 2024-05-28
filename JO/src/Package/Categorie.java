@@ -53,4 +53,19 @@ public class Categorie {
         throw new UnsupportedOperationException();
     }
 
+	public void supprimerSportif() {
+		// TODO - implement Sportif.supprimerSportif
+		throw new UnsupportedOperationException();
+	}
+
+	public void modifierSportif() {
+		// TODO - implement Sportif.modifierSportif
+		throw new UnsupportedOperationException();
+	}
+
+	public void ajouterSportif() {
+		// TODO - implement Sportif.supprimerSportif
+		throw new UnsupportedOperationException();
+	}
+
 }
