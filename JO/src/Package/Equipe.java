@@ -19,7 +19,10 @@ public class Equipe {
      * @param nomEntraineur
      */
     public Equipe(String nomEquipe, String genreEquipe, String nomEntraineur) {
-        // TODO - implement Equipe.Equipe
+        this.nomEquipe=nomEquipe;
+        this.genreEquipe=genreEquipe;
+        this.nomEntraineur=nomEntraineur;
+
         throw new UnsupportedOperationException();
     }
 
@@ -93,6 +96,8 @@ public class Equipe {
      * @param nouveauNomEntraineur
      */
     public void modifierEntraineurEquipe(String nouveauNomEntraineur) {
+       this.nomEntraineur=nouveauNomEntraineur;
+
         // TODO - implement Equipe.modifierEntraineurEquipe
         throw new UnsupportedOperationException();
     }
@@ -103,7 +108,7 @@ public class Equipe {
      */
     public void modifierNomEquipe(String nouveauNomEquipe) {
         // TODO - implement Equipe.modifierNomEquipe
-		nomEquipe = nouveauNomEquipe;
+		this.nomEquipe = nouveauNomEquipe;
         throw new UnsupportedOperationException();
 		
     }

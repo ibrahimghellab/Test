@@ -48,23 +48,48 @@ public class Categorie {
      * 
      * @param nomCategorie
      */
-    public void afficherCategorie(String nomCategorie) {
-        // TODO - implement Cat�gorie.afficherCategorie
+    public void afficherCategorie() {
+        
+        System.out.println("Cette equipe est dans la catégorie : " + this.nomCategorie);              
         throw new UnsupportedOperationException();
     }
 
-	public void supprimerSportif() {
-		// TODO - implement Sportif.supprimerSportif
+	public void supprimerSportif(Sportif sportif) {
+        
+		if(leSportif.contains(sportif))
+        {
+			leSportif.remove(sportif);
+		}
+        else
+        {
+			System.out.println("Le sportif que vous voulez supprimer n'est pas présent");
+		}
 		throw new UnsupportedOperationException();
+
 	}
 
-	public void modifierSportif() {
+	public void modifierSportif(Sportif sportif , Sportif nouveausportif) {
 		// TODO - implement Sportif.modifierSportif
+        if(leSportif.contains(sportif))
+        {
+            leSportif.set(leSportif.indexOf(sportif),nouveausportif);
+        }
+        else
+        {
+            System.out.println("Le sportif que vous voulez modifier n'existe pas");
+        }
 		throw new UnsupportedOperationException();
 	}
 
-	public void ajouterSportif() {
+	public void ajouterSportif(Sportif sportif) {
 		// TODO - implement Sportif.supprimerSportif
+        if(!(leSportif.contains(sportif)))
+        {
+            leSportif.add(sportif);
+        }else
+        {            
+            System.out.println("Le sportif que vous voulez ajouter est déjà présent");
+        }
 		throw new UnsupportedOperationException();
 	}
 

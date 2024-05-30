@@ -27,8 +27,15 @@ public class Sportif {
 
 	}
 
-	public void supprimerResultat(){
-		
+	public void supprimerResultat(Resultat resultat){
+		if(sonResulat.contains(resultat))
+		{
+			sonResulat.remove(resultat);
+		}
+		else
+		{
+			System.out.println("Le resultat que vous voulez supprimer n'exste pas");
+		}
 	}
 	
 

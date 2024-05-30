@@ -12,12 +12,16 @@ public class SiteEpreuve {
 	 * 
 	 * @param nomSiteEpreuve
 	 */
-	public SiteEpreuve(String nomSiteEpreuve) {
+	public SiteEpreuve(String nomSiteEpreuve, Ville saVille) {
+		this.nomSiteEpreuve=nomSiteEpreuve;
+		this.saVille=saVille;		
 		// TODO - implement SiteEpreuve.SiteEpreuve
 		throw new UnsupportedOperationException();
 	}
 
 	public void afficherSiteEpreuve() {
+		System.out.println("L'épreuve se passe dans " + this.nomSiteEpreuve);
+		
 		// TODO - implement SiteEpreuve.afficherSiteEpreuve
 		throw new UnsupportedOperationException();
 	}
@@ -27,6 +31,8 @@ public class SiteEpreuve {
 	 * @param nouveauNomSiteEpreuve
 	 */
 	public void modifierNomSiteEpreuve(String nouveauNomSiteEpreuve) {
+		this.nomSiteEpreuve =nouveauNomSiteEpreuve;
+
 		// TODO - implement SiteEpreuve.modifierNomSiteEpreuve
 		throw new UnsupportedOperationException();
 	}
@@ -39,8 +45,8 @@ public class SiteEpreuve {
 		
 	}
 
-	public void modifierVille(){
-		
+	public void modifierVille(Ville nouvelleVille){
+		this.saVille=nouvelleVille;				
 	}
 
 }

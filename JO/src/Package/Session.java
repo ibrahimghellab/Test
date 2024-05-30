@@ -1,5 +1,7 @@
 package Package;
 
+import java.util.*;
+
 public class Session {
 
 	private ArrayList<Resultat> lesResultats;
@@ -10,55 +12,58 @@ public class Session {
 	private String jourSession;
 	private boolean individuelleSession;
 	private String descriptionSession;
-	private String typeGenresession;
+	private String typeGenreSession;
 	private float dureeSession;
 	private int numSession;
 	private ArrayList<Sport> sesSports;
 
-	void modifierVille(Ville v){
-		laVille=v;
+	void modifierVille(Ville nouvelleVille){
+		this.laVille=nouvelleVille;
 	}
-	void modifierEpreuve(Epreuve e){
-		sonEpreuve=e;
+	void modifierEpreuve(Epreuve nouvelleEpreuve){
+		this.sonEpreuve=nouvelleEpreuve;
 	}
-	void modifierdateSession(String dateSession){
-		this.dateSession=dateSession;
+	void modifierdateSession(String nouvelledateSession){
+		this.dateSession=nouvelledateSession;
 	}
-	void modifierhoraireSession(String horaireSession){
-		this.horaireSession = horaireSession;
-	}
-
-	void modifierjourSession(String jourSession){
-		this.jourSession = jourSession;
+	void modifierhoraireSession(String nouvellehoraireSession){
+		this.horaireSession = nouvellehoraireSession;
 	}
 
-	void modifierindividuelleSession (boolean individuelleSession){
-		this.individuelleSession =individuelleSession;
+	void modifierjourSession(String nouveauJourSession){
+		this.jourSession = nouveauJourSession;
+	}
+
+	void modifierindividuelleSession (boolean nouveauIndividuelleSession){
+		this.individuelleSession = nouveauIndividuelleSession;
 	}
 
 
-	void modifierdescriptionSesson(String descriptionSession){
-		this.descriptionSession = descriptionSession;
+	void modifierdescriptionSesson(String nouvelleDescriptionSession){
+		this.descriptionSession = nouvelleDescriptionSession;
 	} 
-	void modifiertypeGenresession[String typeGenresession){
-		this.typeGenreSession = typeGenreSession;
-	}]
+	void modifiertypeGenresession(String nouveauTypeGenreSession){
+		this.typeGenreSession = nouveauTypeGenreSession;
+	}
 
 
-	void modifierdureeSession(float dureeSession){
-		this.dureeSession = dureeSession;
+	void modifierdureeSession(float nouvelleDureeSession){
+		this.dureeSession = nouvelleDureeSession;
 	}
 	
-	void modifiernumSession(int numSession){
-		this.numSession = numSession;
+	void modifiernumSession(int nouveauNumSession){
+		this.numSession = nouveauNumSession;
 	}
 
 
 
-	void ajouterResultat(Resultat r){
-		 if(!(lesResultats.contains(r))){
-            lesResultats.add(r);
-        }else{
+	void ajouterResultat(Resultat resultat){
+		 if(!(lesResultats.contains(resultat)))
+		{
+            lesResultats.add(resultat);
+        }
+		else
+		{
             System.out.println("Le résultat est déjà présent pour cette session");
         }
 	}
@@ -85,7 +90,7 @@ public class Session {
 			this.dateSession = dateSession;
 			this.horaireSession = horaireSession;
 			this.jourSession = jourSession;
-			this individuelleSession = individuelleSession;
+			this.individuelleSession = individuelleSession;
 			this.typeGenreSession = typeGenreSession;
 			this.dureeSession = dureeSession;
 		throw new UnsupportedOperationException();
@@ -133,18 +138,24 @@ public class Session {
 	 */
 
 	
-	void ajouterSport(Sport s){
-		 if(!(sesSports.contains(s))){
-            sesSports.add(s);
-        }else{
+	void ajouterSport(Sport sport){
+		 if(!(sesSports.contains(sport)))
+		{
+            sesSports.add(sport);
+        }
+		else
+		{
             System.out.println("Le sport est déjà présent pour cette session");
         }
 	}
 
-	void supprimerResultat(Sport s){
-		 if((sesSports.contains(s))){
-            sesSports.remove(s);
-        }else{
+	void supprimerResultat(Sport sport){
+		 if((sesSports.contains(sport)))
+		{
+            sesSports.remove(sport);
+        }
+		else
+		{
             System.out.println("Le sport n'existe pas pour cette session");
         }
 	}
