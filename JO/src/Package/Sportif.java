@@ -5,28 +5,29 @@ import java.util.*;
 public class Sportif {
 
 	Equipe sonEquipe;
-	ArrayList<Resultat> sonResulat;
+	ArrayList<Resultat> sonResultat;
 	Sport sonsport;
 	Pays sonPays;
 	Categorie saCategorie;
-	private char nomSportif;
-	private char prenomSportif;
+	private String nomSportif;
+	private String prenomSportif;
 	private int age;
 
 	/**
-	 * 
+	 * @param prenomSportif
 	 * @param nomSportif
 	 * @param age
 	 */
-	public Sportif(String nomSportif, int age) {
+	public Sportif(String nomSportif,String prenomSportif, int age) {
 		this.nomSportif = nomSportif;
+		this.prenomSportif = prenomSportif;
 		this.age = age;
 		throw new UnsupportedOperationException();
 	}
 
 	public void ajouterResultat(Resultat resultat){
-		 if(!(sonResultats.contains(resultat))){
-            sonResultats.add(resultat);
+		 if(!(sonResultat.contains(resultat))){
+            sonResultat.add(resultat);
         }else{
             
             System.out.println("Le résultat que vous souhaitez ajouter est dejà présent");
@@ -35,9 +36,9 @@ public class Sportif {
 	}
 
 	public void supprimerResultat(Resultat resultat){
-		if(sonResulat.contains(resultat))
+		if(sonResultat.contains(resultat))
 		{
-			sonResulat.remove(resultat);
+			sonResultat.remove(resultat);
 		}
 		else
 		{

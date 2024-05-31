@@ -12,17 +12,17 @@ public class Ville {
 
 	/**
 	 * @param nomVille
-	 * @param codePostal
+	 * @param codepostalVille
 	 */
 	public Ville(String nomVille,int codePostal) {
 		this.nomVille=nomVille;
-		this.codePostal=codePostal
+		this.codepostalVille=codePostal;
 		
 		throw new UnsupportedOperationException();
 	}
 
 	public void afficherVille() {
-		System.out.println("Nom de la ville est  " + nomVille +" son code postale est "+ codePostal);
+		System.out.println("Nom de la ville est  " + nomVille +" son code postale est "+ codepostalVille);
 		throw new UnsupportedOperationException();
 	}
 

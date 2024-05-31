@@ -20,7 +20,7 @@ public class SiteEpreuve {
 	}
 
 	public void afficherSiteEpreuve() {
-		System.out.println("L'épreuve se passe au " + this.nomSiteEpreuve "dans la ville de "+saVille);
+		System.out.println("L'épreuve se passe au " + this.nomSiteEpreuve + "dans la ville de "+saVille);
 		
 		throw new UnsupportedOperationException();
 	}
