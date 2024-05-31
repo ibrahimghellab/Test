@@ -4,87 +4,61 @@ import java.util.*;
 
 public class Resultat {
 
-	ArrayList<Equipe> lEquipe;
-	Session laSession;
-	Pays lePays;
+	ArrayList<Equipe> classementEquipe;
+	private Session laSession;
 	ArrayList<Sportif> leSportif;
-	private String classement;
-	private int numResultat;
-
+	
 	/**
 	 * 
-	 * @param Classement
-	 * @param numResultat
-	 */
-	public Resultat(String Classement, int numResultat) {
-		this.Classement=Classement;
-		this.numResultat=numResultat;
-		throw new UnsupportedOperationException();
-	}
-
 	/**
 	 * 
 	 * @param nomEpreuve
 	 * @param numSession
 	 */
+
 	public void afficherResultat(String nomEpreuve, String numSession) {
-		
-		
+		// TODO - implement Pays.afficherPays
+		System.out.println("Nom de l'épreuve : " + nomEpreuve);
+		System.out.println("Numero de la session : " + numSession);
+
 		throw new UnsupportedOperationException();
 	}
-
-
-
-	/**
-	 * 
-	 * @param dateSession
-	 * @param horaireSession
-	 * @param nomCategorie
-	 * @param nomPays
-	 * @param numResultat
-	 */
-	public void modifierResultat(String dateSession, String horaireSession, String nomCategorie, String nomPays, int numResultat) {
-		// TODO - implement Resultat.modifierResultat
-		throw new UnsupportedOperationException();
+ 
+	public void supprimerSportif(Sportif sportif){
+		if((leSportif.contains(sportif))){
+            leSportif.remove(sportif);
+        }else{
+            System.out.println("Le sportif n'existe pas pour ce resultat");
+        }
 	}
 
-	/**
-	 * 
-	 * @param Pays
-	 */
-	public void afficherResultatPays(String Pays) {
-		// TODO - implement Resultat.afficherResultatPays
-		throw new UnsupportedOperationException();
-	}
 
-	public void supprimerSportif() {
-		// TODO - implement Sportif.supprimerSportif
-		throw new UnsupportedOperationException();
-	}
-
-	public void modifierSportif() {
-		// TODO - implement Sportif.modifierSportif
-		throw new UnsupportedOperationException();
-	}
-
-	public void ajouterPays(){
+	public void ajouterSportif(Sportif sportif){
+		if(!(leSportif.contains(sportif))){
+            leSportif.add(sportif);
+        }else{
+            System.out.println("Le sportif est déjà présente dans ce resultat");
+        }
 
 	}
 
-	public void supprimerPays(){
-		
+
+
+	public void supprimerEquipe(Equipe equipe){
+		if((classementEquipe.contains(equipe))){
+            classementEquipe.remove(equipe);
+        }else{
+            System.out.println("L'equipe n'existe pas pour ce resultat");
+        }
 	}
 
-	public void ajouterEquipe(){
+
+	public void ajouterEquipe(Equipe equipe){
+		if(!(classementEquipe.contains(equipe))){
+            classementEquipe.add(equipe);
+        }else{
+            System.out.println("L'equipe est déjà présente dans ce resultat");
+        }
 
 	}
 
-	public void supprimerEquipe(){
-		
-	}
-	
-	public void modifierPays(){
-		
-	}
-
-}

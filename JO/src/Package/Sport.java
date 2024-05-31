@@ -48,7 +48,7 @@ public class Sport {
 	}
 
 
-	public void ajouterSportif(Session s){
+	public void ajouterSession(Session s){
 		if(!(sesSessions.contains(s))){
             sesSessions.add(s);
         }else{
