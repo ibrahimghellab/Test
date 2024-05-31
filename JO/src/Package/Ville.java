@@ -11,16 +11,18 @@ public class Ville {
 	private int codepostalVille;
 
 	/**
-	 * 
+	 * @param nomVille
 	 * @param codePostal
 	 */
-	public Ville(int codePostal) {
-		// TODO - implement Ville.Ville
+	public Ville(String nomVille,int codePostal) {
+		this.nomVille=nomVille;
+		this.codePostal=codePostal
+		
 		throw new UnsupportedOperationException();
 	}
 
 	public void afficherVille() {
-		// TODO - implement Ville.afficherVille
+		System.out.println("Nom de la ville est  " + nomVille +" son code postale est "+ codePostal);
 		throw new UnsupportedOperationException();
 	}
 

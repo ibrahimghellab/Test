@@ -19,11 +19,18 @@ public class Sportif {
 	 * @param age
 	 */
 	public Sportif(String nomSportif, int age) {
-		// TODO - implement Sportif.Sportif
+		this.nomSportif = nomSportif;
+		this.age = age;
 		throw new UnsupportedOperationException();
 	}
 
-	public void ajouterResultat(){
+	public void ajouterResultat(Resultat resultat){
+		 if(!(sonResultats.contains(resultat))){
+            sonResultats.add(resultat);
+        }else{
+            
+            System.out.println("Le résultat que vous souhaitez ajouter est dejà présent");
+        }
 
 	}
 
@@ -34,7 +41,7 @@ public class Sportif {
 		}
 		else
 		{
-			System.out.println("Le resultat que vous voulez supprimer n'exste pas");
+			System.out.println("Le resultat que vous voulez supprimer n'existe pas");
 		}
 	}
 	

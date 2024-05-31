@@ -17,7 +17,8 @@ public class Resultat {
 	 * @param numResultat
 	 */
 	public Resultat(String Classement, int numResultat) {
-		// TODO - implement Resultat.Resultat
+		this.Classement=Classement;
+		this.numResultat=numResultat;
 		throw new UnsupportedOperationException();
 	}
 
@@ -27,7 +28,8 @@ public class Resultat {
 	 * @param numSession
 	 */
 	public void afficherResultat(String nomEpreuve, String numSession) {
-		// TODO - implement Resultat.afficherResultat
+		
+		
 		throw new UnsupportedOperationException();
 	}
 

@@ -26,18 +26,18 @@ public class Equipe {
         throw new UnsupportedOperationException();
     }
 
-    public void ajouterResultat(Resultat r){
-        if(!(lesResultats.contains(r))){
-            lesResultats.add(r);
+    public void ajouterResultat(Resultat resultat){
+        if(!(lesResultats.contains(resultat))){
+            lesResultats.add(resultat);
         }else{
             // a immplémenter dans le controller
             System.out.println("Le résultat que vous souhaitez ajouter est dejà présent");
         }
     }
 
-    public void supprimerResultat(Resultat r){
-        if(lesResultats.contains(r)){
-            lesResultats.remove(r);
+    public void supprimerResultat(Resultat resultat){
+        if(lesResultats.contains(resultat)){
+            lesResultats.remove(resultat);
         }else{
             // a immplémenter dans le controller
             System.out.println("La session que vous souhaitez supprimer n'existe pas");
@@ -47,7 +47,7 @@ public class Equipe {
     public void afficherEquipe() {
         // TODO - implement Equipe.afficherEquipe
         
-		System.out.println("Nom de l'équipe : " + nomEquipe);
+		System.out.println("Nom de l'équipe : " + nomEquipe +" de genre "+ genreEquipe+" entrainer par "+nomEntraineur);
 		throw new UnsupportedOperationException();
     }
 
