@@ -8,17 +8,17 @@ public class Pays {
 	ArrayList<Resultat> sesResultats;
 	ArrayList<Equipe> lEquipe;
 	ArrayList<Ville> sesVilles;
-	private String Nom;
+	private String NomPays;
 
 	public Pays() {
 		// TODO - implement Pays.Pay
-		this.nom = nom;
+		this.NomPays = NomPays;
 		throw new UnsupportedOperationException();
 	}
 
 	public void afficherPays() {
 		// TODO - implement Pays.afficherPays
-		System.out.println("Nom du pays : " + nom);
+		System.out.println("Nom du pays : " + NomPays);
 		throw new UnsupportedOperationException();
 	}
 
@@ -30,9 +30,16 @@ public class Pays {
         }
 	}
 	
-
-	public void modifierSportif() {
+	public void modifierSportif(Sportif sportif , Sportif nouveausportif) {
 		// TODO - implement Sportif.modifierSportif
+        if(sesSportifs.contains(sportif))
+        {
+            sesSportifs.set(sesSportifs.indexOf(sportif),nouveausportif);
+        }
+        else
+        {
+            System.out.println("Le sportif que vous voulez modifier n'existe pas");
+        }
 		throw new UnsupportedOperationException();
 	}
 
@@ -98,8 +105,11 @@ public class Pays {
         }
 	}
 	
-	void modifierNomPays(){
-		
-	}
+	public void modifierNomPays(String nouveauNomPays) {
+        // TODO - implement Epreuve.modifierNomEpreuve
+        NomPays = nouveauNomPays;
+        throw new UnsupportedOperationException();
+    }
+
 	
 }
