@@ -13,19 +13,50 @@ public class Sport {
 	 * 
 	 * @param nomSport
 	 */
-	public Sport(String nomSport) {
+	public Sport(String nomSport, String typeSport) {
 		// TODO - implement Sport.Sport
+		this.nomSport = nomSport;
+		this.typeSport=typeSport;
 		throw new UnsupportedOperationException();
 	}
 
-	public void supprimerSportif() {
-		// TODO - implement Sportif.supprimerSportif
-		throw new UnsupportedOperationException();
+	public void supprimerSportif(Sportif f){
+		if((leSportif.contains(f))){
+            leSportif.remove(f);
+        }else{
+            System.out.println("Le sportif n'existe pas pour ce sport");
+        }
 	}
 
-	public void ajouterSportif() {
-		// TODO - implement Sportif.supprimerSportif
-		throw new UnsupportedOperationException();
+
+	public void ajouterSportif(Sportif f){
+		if(!(leSportif.contains(f))){
+            leSportif.add(f);
+        }else{
+            System.out.println("Le sportif est déjà présente dans ce sport");
+        }
+
 	}
+
+	
+	public void supprimerSession(Session s){
+		if((sesSessions.contains(s))){
+            sesSessions.remove(s);
+        }else{
+            System.out.println("La session n'existe pas pour ce sport");
+        }
+	}
+
+
+	public void ajouterSportif(Session s){
+		if(!(sesSessions.contains(s))){
+            sesSessions.add(s);
+        }else{
+            System.out.println("La session est déjà présente dans ce sport");
+        }
+
+	}
+
+
 
 }
