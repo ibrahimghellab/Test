@@ -12,7 +12,7 @@ public class Sport {
 	 * 
 	 * @param nomSport
 	 */
-	public Sport(String nomSport, String typeSport) {
+	public Sport(String nomSport) {
 		// TODO - implement Sport.Sport
 		this.nomSport = nomSport;
 		
