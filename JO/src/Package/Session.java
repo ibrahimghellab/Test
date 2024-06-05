@@ -15,7 +15,7 @@ public class Session {
 	private String typeGenreSession;
 	private float dureeSession;
 	private int numSession;
-	SiteEpreuve site;
+	private SiteEpreuve site;
 
 
 
