@@ -5,7 +5,7 @@ import java.util.*;
 public class Epreuve {
 
     ArrayList<Session> sesSessions;
-    ArrayList<SiteEpreuve> lesSitesEpreuves;
+    Sport sport;
     private String nomEpreuve;
 
     /**

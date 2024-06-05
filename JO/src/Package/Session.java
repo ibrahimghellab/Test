@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Session {
 
-	private ArrayList<Resultat> lesResultats;
+	private Resultat sonResultat;
 	private Ville laVille;
 	private Epreuve sonEpreuve;
 	private String dateSession;
@@ -15,7 +15,9 @@ public class Session {
 	private String typeGenreSession;
 	private float dureeSession;
 	private int numSession;
-	private ArrayList<Sport> sesSports;
+	SiteEpreuve site;
+
+
 
 	void modifierVille(Ville nouvelleVille){
 		this.laVille=nouvelleVille;
