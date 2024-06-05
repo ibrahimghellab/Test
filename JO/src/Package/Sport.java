@@ -6,7 +6,6 @@ public class Sport {
 
 	ArrayList<Sportif> leSportif;
 	ArrayList<Session> sesSessions;
-	private String typeSport;
 	private String nomSport;
 
 	/**
@@ -16,7 +15,7 @@ public class Sport {
 	public Sport(String nomSport, String typeSport) {
 		// TODO - implement Sport.Sport
 		this.nomSport = nomSport;
-		this.typeSport=typeSport;
+		
 		throw new UnsupportedOperationException();
 	}
 

@@ -5,7 +5,6 @@ import java.util.*;
 public class SiteEpreuve {
 
 	private Ville saVille;
-	ArrayList<Epreuve> lEpreuve;
 	private String nomSiteEpreuve;
 
 	/**
@@ -35,7 +34,7 @@ public class SiteEpreuve {
 		throw new UnsupportedOperationException();
 	}
 
-		public void ajouterEpreuve(Epreuve epreuve){
+		/*public void ajouterEpreuve(Epreuve epreuve){
 		if(!(lEpreuve.contains(epreuve)))
 		{
         	lEpreuve.add(epreuve);
@@ -55,7 +54,7 @@ public class SiteEpreuve {
 		{
             System.out.println("L'épreuve que vous souhaitez supprimer n'existe pas");
         }
-	}
+	}*/
 
 	public void modifierVille(Ville nouvelleVille){
 		this.saVille=nouvelleVille;				
