@@ -29,6 +29,10 @@ public class Epreuve {
         }
     } 
 
+    public void ajouter_modifier_Sport(Sport sport){
+        this.sport=sport;
+    } 
+
 
     public void supprimerSession(Session s){
         if(sesSessions.contains(s)){
@@ -39,33 +43,8 @@ public class Epreuve {
         }
     }
 
-    /**
-     * 
-     * @param siteEpreuve
-     */
-    public void ajouterSiteEpreuve(SiteEpreuve siteEpreuve) {
-        // TODO - implement Epreuve.ajouterSiteEpreuve
-        if(!(lesSitesEpreuves.contains(siteEpreuve))){
-            lesSitesEpreuves.add (siteEpreuve);
-        }else{
-            System.out.println("Le site épreuve est déjà présent pour cette épreuve");
-        }
-        throw new UnsupportedOperationException();
-    }
     
-    /**
-     * 
-     * @param siteEpreuve
-     */
-    public void supprimerSiteEpreuve(SiteEpreuve siteEpreuve) {
-        // TODO - implement Epreuve.ajouterSiteEpreuve
-        if(lesSitesEpreuves.contains(siteEpreuve)){
-            lesSitesEpreuves.remove(siteEpreuve);
-        }else{
-            System.out.println("Le site épreuve n'existe pas");
-        }
-        throw new UnsupportedOperationException();
-    }
+
 
     /**
      * 

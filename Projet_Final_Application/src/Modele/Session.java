@@ -1,7 +1,5 @@
 package Modele;
 
-import java.util.*;
-
 public class Session {
 
 	private Resultat sonResultat;
@@ -59,24 +57,11 @@ public class Session {
 
 
 
-	void ajouterResultat(Resultat resultat){
-		 if(!(lesResultats.contains(resultat)))
-		{
-            lesResultats.add(resultat);
-        }
-		else
-		{
-            System.out.println("Le résultat est déjà présent pour cette session");
-        }
+	void ajouter_modifier_Resultat(Resultat resultat){	
+            this.sonResultat=resultat;        
+		throw new UnsupportedOperationException();
 	}
 
-	void supprimerResultat(Resultat r){
-		 if((lesResultats.contains(r))){
-            lesResultats.remove(r);
-        }else{
-            System.out.println("Le résultat n'existe pas pour cette session");
-        }
-	}
 
 	/**
 	 * 
@@ -95,11 +80,9 @@ public class Session {
 			this.individuelleSession = individuelleSession;
 			this.typeGenreSession = typeGenreSession;
 			this.dureeSession = dureeSession;
+
 		throw new UnsupportedOperationException();
 	}
-
-	
-
 
 
 	public void afficherPlanning() {
@@ -108,59 +91,8 @@ public class Session {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param dateSession
-	 * @param horaireSession
-	 * @param jourSession
-	 * @param individuelleSession
-	 * @param typeGenreSession
-	 * @param dureeSession
-	 */
-
-	
-
-	/**
-	 * 
-	 * @param dateSession
-	 * @param horaireSession
-	 * @param jourSession
-	 * @param nomCategorie
-	 * @param typeSport
-	 */
 
 
-	/**
-	 * 
-	 * @param dateSession
-	 * @param horaireSession
-	 * @param jourSession
-	 * @param nomCategorie
-	 * @param typeSport
-	 */
-
-	
-	void ajouterSport(Sport sport){
-		 if(!(sesSports.contains(sport)))
-		{
-            sesSports.add(sport);
-        }
-		else
-		{
-            System.out.println("Le sport est déjà présent pour cette session");
-        }
-	}
-
-	void supprimerResultat(Sport sport){
-		 if((sesSports.contains(sport)))
-		{
-            sesSports.remove(sport);
-        }
-		else
-		{
-            System.out.println("Le sport n'existe pas pour cette session");
-        }
-	}
 
 
 
